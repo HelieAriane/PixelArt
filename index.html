@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Art</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Pixel Art</h1>
+  </header>
+  
+  <div class="tailleGrille">
+    <label for="tailleGrille">Taille de la grille :</label>
+    <input type="range" id="tailleGrille" min="2" max="50" value="16">
+    <span id="afficheTailleGrille">16x16</span>
+  </div>
+
+  <div class="paletteCouleurs">  
+    <label for="choisirCouleur">Choisissez vos couleurs :</label>
+    <input type="color" id="choisirCouleur">
+    <div id="listeCouleurs"></div>
+    <button id="effacerPalette" style="display: none;">Effacer la palette</button>
+  </div>  
+
+  <div id="grille" class="grille"></div>
+</body>
+</html>
